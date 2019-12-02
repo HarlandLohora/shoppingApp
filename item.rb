@@ -3,7 +3,7 @@ class Item
 
     def initialize( text="" )
         @text    = text
-        @checked = false
+        @checked = true
     end
     def to_s
         if @checked 
@@ -13,3 +13,8 @@ class Item
         end
     end
 end
+
+
+item = Item.new('Taco')
+
+puts item
